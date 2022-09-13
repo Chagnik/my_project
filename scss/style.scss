@@ -19,10 +19,25 @@
 
 $color1: #070707;
 $color2: #828282;
+$color3: #F6F6F6;
+
+%18px {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: $color1;
+}
+%14px {
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    color: $color2;
+}
 
 .header {
     width: 1445px;
     margin: 0 auto;
+    margin-bottom: 104px;
     &__menu {
         font-family: 'Gilroy-Bold';
         margin: 0 auto;
@@ -36,9 +51,7 @@ $color2: #828282;
     }
     &__menu-item {
         list-style: none;
-        font-size: 18px;
-        line-height: 22px;
-        color: $color2;
+        @extend %18px;
         &:first-child {
             color: $color1;
         }
@@ -76,10 +89,7 @@ $color2: #828282;
         display: flex;
         align-items: flex-end;
         p {
-            font-family: 'Gilroy-Medium';
-            font-size: 18px;
-            line-height: 22px;
-            color: $color1;
+            @extend %18px;
         }
     }
     
@@ -106,3 +116,55 @@ $color2: #828282;
     }
     
     }
+    .about {
+        width: 1445px;
+        margin: 0 auto;
+        background-color: $color3;
+        p {
+            @extend 18px;
+            padding-bottom: 53px;
+        }
+		&__title {
+            p {
+                padding: 120.25px 0px 18px 0px;
+                @extend .title;
+            }
+		}
+}
+.skills {
+    width: 1445px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    >p{
+        @extend %18px;
+        text-align: center;
+    }
+    &__title {
+        padding: 91px 0px 69px 0px;
+        @extend .title;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        width: 937px;
+        margin-top: 84px;
+    }
+    &__item { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 207px;
+        p {
+            @extend %14px;
+        }  
+    }
+}
+.title {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: $color1;  
+}

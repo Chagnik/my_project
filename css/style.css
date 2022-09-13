@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   width: 1445px;
   margin: 0 auto;
+  margin-bottom: 104px;
 }
 .header__menu {
   font-family: "Gilroy-Bold";
@@ -165,4 +166,66 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__image img {
   width: 100%;
+}
+
+.about {
+  width: 1445px;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+}
+.about p {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  padding-bottom: 53px;
+}
+.about__title p {
+  padding: 120.25px 0px 18px 0px;
+}
+
+.skills {
+  width: 1445px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+}
+.skills > p {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+  text-align: center;
+}
+.skills__title {
+  padding: 91px 0px 69px 0px;
+}
+.skills__container {
+  display: flex;
+  justify-content: space-around;
+  width: 937px;
+  margin-top: 84px;
+}
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 207px;
+}
+.skills__item p {
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+
+.title, .about__title p, .skills__title {
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
 }

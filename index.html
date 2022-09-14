@@ -3,19 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width>
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Denis Novik Portfolio</title>
 </head>
+
 <body>
     <div class="header">
         <div class="header__menu">
-            <li class="header__menu-item">Home</li>
-            <li class="header__menu-item">About</li>
-            <li class="header__menu-item">Skills</li>
-            <li class="header__menu-item">Portfolio</li>
-            <li class="header__menu-item">Contacts</li>
+            <a href="#home" class="header__menu-item">Home</a>
+            <a href="#hid1" class="header__menu-item">About</a>
+            <a href="#hid2" class="header__menu-item">Skills</a>
+            <a href="#hid4" class="header__menu-item">Portfolio</a>
+            <a href="#hid5" class="header__menu-item">Contacts</a>
+        </div>
+        <div class="header__burger-menu">
+            <div class="header__link">
+                <a href="" class="header__burger-menu-item">Home</a>
+                <a href="" class="header__burger-menu-item">About</a>
+                <a href="" class="header__burger-menu-item">Skills</a>
+                <a href="" class="header__burger-menu-item">Portfolio</a>
+                <a href="" class="header__burger-menu-item">Contacts</a>
+            </div>
+            <div class="header__button">
+                <button>
+                    <img src="./image/exit.png" alt="EXIT">
+                </button>
+                <div class="header__langburg">
+                    <button>RU</button>
+                    <p>|</p>
+                    <button>ENG</button>
+                </div>
+            </div>
         </div>
         <div class="header__hero">
             <div class="header__information">
@@ -28,14 +47,22 @@
                 <div class="header__language">
                     <p>RU | ENG</p>
                 </div>
+                <div class="header__burger">
+                    <img src="./image/burger.png" alt="" srcset="">
+                </div>
+                
             </div>
             <div class="header__image">
-                <img class="pc" src="/image/BSPP2266.png" alt="">
-                <img class="mobile" src="/image/mobile.png" alt="">
+                <picture>
+                    <source media="(min-width: 1330px)" srcset="/image/BSPP2266.png" type="image/png">
+                    <source media="(max-width: 992px)" srcset="/image/mobile.png" type="image/png">
+                    <img src="./image/BSPP2266.png" alt="">
+                </picture>
+
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="hid1">
         <div class="about__title title">
             <p>About me</p>
         </div>
@@ -43,14 +70,14 @@
         <p>I'm studying at courses "Web and mobile design <br> interfaces" in IT-Academy.</p>
         <p>Ready to implement excellent projects <br> with wonderful people.</p>
     </div>
-    <div class="skills">
+    <div class="skills" id="hid2">
         <div class="skills__title title">
             <p>Skills</p>
         </div>
         <p>I work in such programs as</p>
         <div class="skills__container">
             <div class="skills__item">
-                <img  class="logo_wh" src="../image/item_logo/PS.png" alt="">
+                <img src="../image/item_logo/PS.png" alt="">
                 <p>Adobe <br> Photoshop</p>
                 <img src=".//image/item_logo/Star4.png" alt="">
             </div>
